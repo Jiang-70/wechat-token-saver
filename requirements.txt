@@ -1,0 +1,5 @@
+# 依赖声明见 pyproject.toml
+# 开发时可直接: pip install -e ".[dev]"
+beautifulsoup4>=4.12
+lxml>=4.9
+Pillow>=10.0

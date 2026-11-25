@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wechat-token-saver"
+version = "1.1.0"
+description = "给 AI 精读用的公众号归档器：Markdown 正文 + 本地配图 + 图片优先级清单，只读该读的图"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [
+    { name = "Jiang-70" }
+]
+keywords = ["wechat", "公众号", "markdown", "scraper", "article", "归档", "ai-agent", "token-saving", "image-priority", "图片优先级"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Text Processing :: Markup :: Markdown",
+]
+dependencies = [
+    "beautifulsoup4>=4.12",
+    "lxml>=4.9",
+    "Pillow>=10.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+wechat-token-saver = "wechat_token_saver.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/Jiang-70/wechat-token-saver"
+Issues = "https://github.com/Jiang-70/wechat-token-saver/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]

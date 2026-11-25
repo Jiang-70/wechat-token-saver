@@ -1,0 +1,7 @@
+# 把公众号链接贴在这里，每行一个
+# 然后运行: wechat-token-saver --from-file examples/links.txt
+#
+# 获取链接：公众号文章 → 右上角 ··· → 复制链接
+# 短链 https://mp.weixin.qq.com/s/xxxxx 或完整长链都行
+
+# https://mp.weixin.qq.com/s/xxxxxxxxxxxxxxxxxxxx
