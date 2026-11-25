@@ -6,14 +6,20 @@ on:
   pull_request:
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   test:
     runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
-        python-version: ["3.9", "3.12", "3.13"]
+        os: [ubuntu-22.04, windows-latest, macos-latest]
+        python-version: ["3.10", "3.12", "3.13"]
+
+    env:
+      PYTHONIOENCODING: utf-8
 
     steps:
       - uses: actions/checkout@v4
@@ -29,4 +35,4 @@ jobs:
       - name: Smoke test CLI
         run: |
           python -m wechat_token_saver --version
-          python -m wechat_token_saver --help
+          python -c "from wechat_token_saver import fetch_article; print('import ok')"

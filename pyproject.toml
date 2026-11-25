@@ -7,7 +7,7 @@ name = "wechat-token-saver"
 version = "1.1.0"
 description = "给 AI 精读用的公众号归档器：Markdown 正文 + 本地配图 + 图片优先级清单，只读该读的图"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 license = "MIT"
 authors = [
     { name = "Jiang-70" }
@@ -19,7 +19,6 @@ classifiers = [
     "Intended Audience :: End Users/Desktop",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
